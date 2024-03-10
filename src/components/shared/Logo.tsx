@@ -1,6 +1,10 @@
 import Link from 'next/link';
 
-
+//ressage
+//Nuflats
+//thecherries
+//lafacts
+//gaet 
 
 const Logo = () => {
     return (
