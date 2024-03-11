@@ -1,6 +1,6 @@
 import { Button } from '@/src/components/ui/button';
 import Link from 'next/link';
-import Logo from '../shared/Logo';
+import Logo from './ui/Logo';
 
 const NavBar = () => {
     return (
@@ -22,8 +22,6 @@ const NavBar = () => {
                         </Link>
                     </div>
                 </div>
-
-                {/* Right Section as Spacer */}
                 <div className="flex-1"></div>
             </div>
         </nav>
