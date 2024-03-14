@@ -1,1 +1,3 @@
-                        Investing made real. Real easy, real returns with <span className='font-bold  text-primary animate-fade-in  animate-delay-300'>Brickz!</span>
+#Brickz
+
+Brickz is a real estate investment app that simplifies finding and analyzing properties. It provides detailed price breakdowns and calculates the estimated ROI, including all expenses. Ideal for investors of all levels."
