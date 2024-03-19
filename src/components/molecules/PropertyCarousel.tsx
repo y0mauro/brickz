@@ -1,12 +1,12 @@
-import { fetchProperties } from "../app/supabase/test";
-import PropertyCard from "./ui/PropertyCard";
+import { fetchProperties } from "../../app/supabase/test";
+import PropertyCard from "../shared/Card";
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from "./ui/carousel";
+} from "../ui/carousel";
 
 const PropertyCarousel = async () => {
     const data = await fetchProperties();
@@ -19,6 +19,8 @@ const PropertyCarousel = async () => {
                     </CarouselItem>
                 ))}
             </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
         </Carousel>
     );
 }

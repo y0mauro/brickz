@@ -1,10 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white p-4">
+    <footer className="bg-primary text-white ">
       <div className=" p-3 mx-auto flex  md:flex-row justify-between items-center">
         <div>
           <h2 className="text-lg font-bold">Brickz</h2>

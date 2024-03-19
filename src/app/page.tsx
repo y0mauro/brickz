@@ -4,16 +4,8 @@ import MainSection from "./MainSection";
 import { fetchProperties } from "./supabase/test";
 import Image from 'next/image'
 import { Property } from '@/src/types'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../components/ui/card";
-import { Badge } from "../components/ui/badge";
-import PropertyCarousel from "../components/PropertyCarousel";
+import PropertyCarousel from "../components/molecules/PropertyCarousel";
+import { SearchForm } from "../components/molecules/SearchForm";
 export default async function Home() {
   const data: Property[] = await fetchProperties()
 
@@ -23,6 +15,7 @@ export default async function Home() {
   return (
     <div className=" flex flex-col gap-10"  >
       <MainSection />
+      <SearchForm />
       <PropertyCarousel />
     </div>
   );

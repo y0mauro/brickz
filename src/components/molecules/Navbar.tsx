@@ -1,19 +1,19 @@
 import { Button } from '@/src/components/ui/button';
 import Link from 'next/link';
-import Logo from './ui/Logo';
+import Logo from '../shared/Logo';
 
 const NavBar = () => {
     return (
         <nav>
-            <div className="flex justify-between items-center h-20 text-white bg-primary relative shadow-sm" role="navigation">
+            <div className="px-3  py-4 flex justify-between items-center h-fit text-white bg-primary relative shadow-sm" role="navigation">
                 {/* Left Section for Logo */}
-                <div className="flex-1">
+                <div className="">
                     <Logo />
                 </div>
 
                 {/* Center Section for Links */}
-                <div className='flex-1 flex justify-center hidden md:flex'>
-                    <div className='space-x-4 antialiased'>
+                <div className='hidden md:flex'>
+                    <div className=' antialiased'>
                         <Link href="/tutorial">
                             <Button variant='link' className='text-white ' size='sm'>How does Brickz work?</Button>
                         </Link>
@@ -22,7 +22,6 @@ const NavBar = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="flex-1"></div>
             </div>
         </nav>
     );
