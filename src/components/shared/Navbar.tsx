@@ -4,9 +4,9 @@ import Logo from "./Logo";
 
 const NavBar = () => {
   return (
-    <nav>
+    <nav className="bg-primary">
       <div
-        className="px-3  py-4 flex justify-between items-center h-fit text-white bg-primary relative shadow-sm"
+        className="px-3  py-4 flex justify-between items-center h-fit text-white  relative shadow-sm w-3/4 m-auto"
         role="navigation"
       >
         {/* Left Section for Logo */}
@@ -17,7 +17,7 @@ const NavBar = () => {
         {/* Center Section for Links */}
         <div className="hidden md:flex">
           <div className=" antialiased">
-            <Link href="/tutorial">
+            <Link href="#tutorial">
               <Button variant="link" className="text-white " size="sm">
                 How does Brickz work?
               </Button>
@@ -25,6 +25,11 @@ const NavBar = () => {
             <Link href="/contact">
               <Button variant="link" className="text-white" size="sm">
                 Contact us
+              </Button>
+            </Link>
+            <Link href="/about">
+              <Button variant="default" className="" size="sm">
+                Join
               </Button>
             </Link>
           </div>
