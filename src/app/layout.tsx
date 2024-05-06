@@ -22,7 +22,7 @@ export default function RootLayout({
         <NavBar />
 
         <main className="flex-grow">
-          <div className="mx-auto w-11/12 md:w-4/5 py-5 text-center flex flex-col flex-grow  ">
+          <div className="mx-auto w-12/12 md:w-full py-5 text-center flex flex-col flex-grow  ">
             {children}
           </div>
         </main>

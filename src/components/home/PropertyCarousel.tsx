@@ -11,7 +11,7 @@ import {
 const PropertyCarousel = async () => {
   const data = await fetchProperties();
   return (
-    <Carousel className="w-3/4 m-auto">
+    <Carousel className="w-4/6 m-auto">
       <CarouselContent className="">
         {data.map((property) => (
           <CarouselItem key={property.id} className="md:basis-1/2 lg:basis-1/4">

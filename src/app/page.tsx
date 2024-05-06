@@ -1,5 +1,5 @@
 import { Button } from "@/src/components/ui/button";
-import MainSection from "../components/home/Hero";
+import Hero from "../components/home/Hero";
 import { fetchProperties } from "./supabase/test";
 import Image from "next/image";
 import { Property } from "@/src/types";
@@ -12,8 +12,11 @@ export default async function Home() {
 
   return (
     <div className=" flex flex-col gap-20">
-      <MainSection />
-      <SearchForm />
+      <div className="flex flex-col gap-8">
+        <Hero />
+        <SearchForm />
+      </div>
+
       <div className="flex flex-col gap-8">
         <Subtitle className="text-2xl">
           <h2>Hot Right now 🔥 </h2>

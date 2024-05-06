@@ -34,7 +34,9 @@ const PropertyCard = ({ property }: { property: Property }) => {
       </CardContent>
       <CardFooter className="w-full p-4 h-full flex justify-between font-semibold text-sm text-center">
         <div>{price}</div>
-        <Badge className="text-xs  bg-primary ">{property.ROI}%</Badge>
+        <Badge className="text-sm  bg-primary/20 border-primary border-2 text-primary ">
+          {property.ROI}%
+        </Badge>
       </CardFooter>
     </Card>
   );
