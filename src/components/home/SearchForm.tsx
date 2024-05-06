@@ -28,14 +28,14 @@ export function SearchForm() {
 
   return (
     <Form {...form}>
-      <form className=" w-1/4 mx-auto flex items-center justify-center gap-3">
+      <form className="   md:w-1/4 mx-auto flex items-center justify-center gap-3">
         <FormField
           control={form.control}
           name="city"
           render={({ field }) => (
             <FormItem className="w-full">
               <FormControl>
-                <Input placeholder="City, Country .. " {...field} />
+                <Input placeholder=" Search for a City.. " {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

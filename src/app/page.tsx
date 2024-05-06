@@ -11,7 +11,7 @@ export default async function Home() {
   const data: Property[] = await fetchProperties();
 
   return (
-    <div className=" flex flex-col gap-20">
+    <div className=" flex flex-col gap-16 mt-8">
       <div className="flex flex-col gap-8">
         <Hero />
         <SearchForm />

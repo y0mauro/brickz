@@ -19,8 +19,10 @@ const PropertyCard = ({ property }: { property: Property }) => {
 
   return (
     <Card key={property.id} className="">
-      <CardHeader>
-        <CardTitle>{property.location}</CardTitle>
+      <CardHeader className="p-2 md:p-4">
+        <CardTitle className="    text-base md:text-2xl ">
+          {property.location}
+        </CardTitle>
         <CardDescription>{property.name}</CardDescription>
       </CardHeader>
 
@@ -32,7 +34,7 @@ const PropertyCard = ({ property }: { property: Property }) => {
           height={300}
         />{" "}
       </CardContent>
-      <CardFooter className="w-full p-4 h-full flex justify-between font-semibold text-sm text-center">
+      <CardFooter className="w-full p-4 h-full    flex-col flex md:flex-row justify-between font-semibold text-sm text-center">
         <div>{price}</div>
         <Badge className="text-sm  bg-primary/20 border-primary border-2 text-primary ">
           {property.ROI}%

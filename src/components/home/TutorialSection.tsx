@@ -43,19 +43,24 @@ const features = [
 
 function TutorialSection({}: Props) {
   return (
-    <div id="features" className="w-full bg-primary/20 p-5">
+    <div id="features" className="w-full bg-primary/20 p-3 md:p-4">
       <Subtitle>
         How does <span className="font-bold  text-primary">Brickz</span> work?
       </Subtitle>{" "}
-      <div className="   grid  grid-cols-1    md:grid-cols-2  justify-around   w-2/4 m-auto  h-full gap-2 items-center  mt-5">
+      <div className="   grid  grid-cols-2 w-full  md:grid-cols-2  justify-around   md:w-2/4 m-auto  h-full gap-2 items-center  mt-5">
         {features.map((feature, idx) => (
-          <Card key={idx} className="p-5 bg-transparent  border-0 shadow-none ">
-            <CardHeader>
-              <CardTitle className="flex gap-2 items-center  justify-center ">
-                {" "}
-                {feature.icon} {feature.title}
+          <Card
+            key={idx}
+            className=" md:p-5 bg-transparent  border-0 shadow-none "
+          >
+            <CardHeader className="p-1 md:p-6">
+              <CardTitle className="flex gap-2  text-xl md:text-2xl  items-center   justify-center ">
+                <span className="hidden md:block">{feature.icon}</span>{" "}
+                <span> {feature.title} </span>
               </CardTitle>
-              <CardDescription>{feature.description}</CardDescription>
+              <CardDescription className="text-xs md:text-sm">
+                {feature.description}
+              </CardDescription>
             </CardHeader>
           </Card>
         ))}
